@@ -112,7 +112,7 @@ class ConfigFile():
                 yaml.dump(full_dict, f, default_flow_style=False)
         elif file_type == "JSON":
             with open(output_path, "w") as f:
-                json.dump(full_dict, f)
+                json.dump(full_dict, f, sort_keys=True, indent=4)
         else:
             raise NotImplementedError
 
@@ -134,7 +134,7 @@ def from_file(path, file_type="YAML"):
 if __name__ == "__main__":
     config_path = "minimal_example.config"
     output_path_yml = "out.yml"
-    output_path_json = "out.yml"
+    output_path_json = "out.json"
 
     # create a config object
     config = ConfigFile(config_path)
