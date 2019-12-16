@@ -1,7 +1,6 @@
 # TRExFitter config translation
 ![](https://github.com/alexander-held/TRExFitter-config-translation/workflows/CI/badge.svg)
 
-## Content:
 - [Overview](#overview)
 - [Example](#example)
 - [YAML config look](#yaml-config-look)
