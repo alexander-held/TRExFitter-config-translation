@@ -70,6 +70,7 @@ Samples:
     Path: "samples/background.root"
     Color: "#F55EE33"
 ```
+The empty line between the two samples is optional.
 Written in JSON, this looks like:
 ```YAML
 {
