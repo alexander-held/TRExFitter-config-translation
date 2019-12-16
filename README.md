@@ -71,7 +71,7 @@ Samples:
     Color: "#F55EE33"
 ```
 Written in JSON, this looks like:
-```JSON
+```YAML
 {
   "Samples": [
     {
