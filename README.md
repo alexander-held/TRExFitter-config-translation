@@ -1,7 +1,16 @@
 # TRExFitter config translation
 ![](https://github.com/alexander-held/TRExFitter-config-translation/workflows/CI/badge.svg)
 
-Parses [`TRExFitter`](https://gitlab.cern.ch/TRExStats/TRExFitter) config files and translates them into dictionaries that can be written to file in YAML or JSON format.
+## Content:
+- [Overview](#overview)
+- [Example](#example)
+- [YAML config look](#yaml-config-look)
+  - [General settings](#general-settings)
+  - [Multiple types of similar objects](#multiple-types-of-similar-objects)
+  - [Multiple parameters per setting](#multiple-parameters-per-setting)
+
+## Overview
+Parse [`TRExFitter`](https://gitlab.cern.ch/TRExStats/TRExFitter) config files and translate them into dictionaries that can be written to file in YAML or JSON format.
 
 This project is a work in progress and the translation is likely to not work yet for all ways of writing a config that are accepted by `TRExFitter`.
 
