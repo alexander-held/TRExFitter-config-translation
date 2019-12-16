@@ -132,7 +132,7 @@ def from_file(path, file_type="YAML"):
 
 
 if __name__ == "__main__":
-    config_path = "minimal_example.config"
+    config_path = "input/minimal_example.config"
     output_path_yml = "out.yml"
     output_path_json = "out.json"
 
