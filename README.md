@@ -88,13 +88,19 @@ An example in `TRExFitter` are automatic binning algorithms, where the type of a
 The `TRExFitter` syntax for this looks like the following: `Binning: "AutoBin","TransfoD",4,4` and would be written in one line.
 Such an option could be written again as a dictionary, where each part of the setting is the value associated to a key describing the setting:
 ```YAML
-AutoBin:
-  Type: "TransfoD"
-  Parameter_1: 4
-  Parameter_2: 4
+Channels:
+  - Name: "Signal region"
+    Variable: "jet_pt"
+    AutoBin:
+      Type: "TransfoD"
+      Parameter_1: 4
+      Parameter_2: 4
 ```
 This can be written equivalently as:
 ```YAML
-AutoBin: {Type: "TransfoD", Parameter_1: 4, Parameter_2: 4}
+Channels:
+  - Name: "Signal region"
+    Variable: "jet_pt"
+    AutoBin: {Type: "TransfoD", Parameter_1: 4, Parameter_2: 4}
 ```
 In these cases where a single parameter is insufficient as a value associated to a key, the value is instead a dictionary of all relevant settings.
