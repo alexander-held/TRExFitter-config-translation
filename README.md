@@ -7,6 +7,7 @@
   - [General settings](#general-settings)
   - [Multiple types of similar objects](#multiple-types-of-similar-objects)
   - [Multiple parameters per setting](#multiple-parameters-per-setting)
+  - [Reading with python](#reading-with-python)
 
 ## Overview
 Parse [`TRExFitter`](https://gitlab.cern.ch/TRExStats/TRExFitter) config files and translate them into dictionaries that can be written to file in YAML or JSON format.
@@ -113,3 +114,17 @@ Channels:
     AutoBin: {Type: "TransfoD", Parameter_1: 4, Parameter_2: 4}
 ```
 In these cases where a single parameter is insufficient as a value associated to a key, the value is instead a dictionary of all relevant settings.
+
+### Reading with python
+Here is a simple example of how to access the information stored in the config via `python`.
+Assuming the information from the previous section ([Multiple parameters per setting](#multiple-parameters-per-setting)) is saved in a file called `config.yml`, here is how to read it and print out the names of all channels (in this case, there is only a single channel):
+```python
+import yaml
+
+with open("config.yml", "r") as f:
+    config = yaml.safe_load(f)
+
+for channel in config["Channels"]:
+    print(channel["Name"])
+```
+This will output `Signal region`.
