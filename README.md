@@ -1,5 +1,7 @@
 # TRExFitter config translation
 
+![](https://github.com/alexander-held/TRExFitter-config-translation/workflows/CI/badge.svg)
+
 Parses [`TRExFitter`](https://gitlab.cern.ch/TRExStats/TRExFitter) config files and translates them into dictionaries that can be written to file in YAML or JSON format.
 
 This project is a work in progress and the translation is likely to not work yet for all ways of writing a config that are accepted by `TRExFitter`.
