@@ -57,7 +57,7 @@ Lists can either be written in the familiar form `[a,b,c]` or, as indicated for 
 The elements in this list, namely the individual channels, are themselves dictionaries.
 
 Samples and systematic uncertainties can be specified in a similar way, as lists of dictionaries.
-Here is an example specifiying two samples:
+Here is an example specifying two samples:
 ```YAML
 Samples:
   - Name: "ttH"
@@ -75,16 +75,16 @@ Written in JSON, this looks like:
 {
   "Samples": [
     {
-      "Color": "#FFAA55",
-      "Path": "samples/ttH.root",
+      "Name": "ttH",
       "Type": "Signal",
-      "Name": "ttH"
+      "Path": "samples/ttH.root",
+      "Color": "#FFAA55"
     },
     {
-      "Color": "#F55EE33",
-      "Path": "samples/background.root",
+      "Name": "ttbar",
       "Type": "Background",
-      "Name": "ttbar"
+      "Path": "samples/background.root",
+      "Color": "#F55EE33"
     }
   ]
 }
