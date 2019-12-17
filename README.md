@@ -14,6 +14,8 @@ Parse [`TRExFitter`](https://gitlab.cern.ch/TRExStats/TRExFitter) config files a
 
 This project is a work in progress and the translation is likely to not work yet for all ways of writing a config that are accepted by `TRExFitter`.
 
+A nice discussion of important aspects to keep in mind for the structure of a configuration file can be found in [this `pyhf` issue](https://github.com/scikit-hep/pyhf/issues/105).
+
 ## Example
 The example `translate.py` uses the example config file from [alexander-held/template_fit_workflows](https://github.com/alexander-held/template_fit_workflows).
 
